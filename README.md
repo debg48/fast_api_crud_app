@@ -6,3 +6,4 @@ Requirements :
  * 
  *
  
+``` pip install fastapi ```
