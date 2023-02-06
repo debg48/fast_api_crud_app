@@ -8,3 +8,8 @@ Requirements :
  
 ``` pip install fastapi ```<br>
 ``` pip install uvicorn[standard] ```
+
+
+Running App : 
+
+``` uvicorn main:app --reload ```
