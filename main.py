@@ -39,6 +39,7 @@ async def shutdown():
 
 @app.post("/register/")
 async def register_Acc(account : Account):
+    """api for registerod"""
     if str(account.email).strip()=='':
         return{"success": False, "message": "email field cannot be blank"}
     if str(account.password).strip()=='':
@@ -51,6 +52,7 @@ async def register_Acc(account : Account):
 
 @app.post("/login/")
 async def login(account : Account):
+    """api for login"""
     cursor = app.db_conn.cursor()
     cursor.execute("SELECT * FROM accounts WHERE email = %s  AND password = %s", (account.email,account.password))
     product = cursor.fetchone()
@@ -69,6 +71,7 @@ async def login(account : Account):
 
 @app.post("/logout/")
 async def logout():
+    """api for logout """
     response=JSONResponse({
                 "message" : "Logout Successfull",
                 "success" : True
@@ -78,6 +81,7 @@ async def logout():
 
 @app.get("/products/{prod_id}")
 async def read_product(prod_id: int):
+    """api to read a particular product  """
     cursor = app.db_conn.cursor()
     cursor.execute("SELECT * FROM products WHERE id = %s", (prod_id,))
     product = cursor.fetchone()
@@ -87,6 +91,7 @@ async def read_product(prod_id: int):
 
 @app.get("/products/")
 async def read_product_list():
+    """api to read all the products from db"""
     cursor = app.db_conn.cursor()
     cursor.execute("SELECT * FROM products")
     products = cursor.fetchall()
@@ -94,6 +99,7 @@ async def read_product_list():
 
 @app.post("/products/")
 async def create_product(product: Product,request:Request):
+    """api to create a new product  """
     token=request.cookies
     if not token:
         return {"success":False , "message":"Unauthorized!"}
@@ -113,6 +119,7 @@ async def create_product(product: Product,request:Request):
 
 @app.put("/products/{product_id}")
 async def update_product(product_id: int, product: Product,request : Request):
+    """api to update a particular product  """
     token=request.cookies
     if not token:
         return {"success":False , "message":"Unauthorized!"}
@@ -132,6 +139,7 @@ async def update_product(product_id: int, product: Product,request : Request):
 
 @app.delete("/products/{product_id}")
 async def delete_product(product_id: int,request : Request):
+    """api to delete a particular product  """
     token=request.cookies
     if not token:
         return {"success":False , "message":"Unauthorized!"}
