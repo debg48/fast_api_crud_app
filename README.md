@@ -12,6 +12,17 @@ Requirements :
 
 Configuring MYSQL :
 
+* Create and use the Database
+``` 
+CREATE DATABASE test_db;
+```
+
+```
+CREATE DATABASE test_db;
+```
+
+*
+
 ``` 
 CREATE TABLE items (
     id INT AUTO_INCREMENT PRIMARY KEY,
