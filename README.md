@@ -6,5 +6,5 @@ Requirements :
  * 
  *
  
-``` pip install fastapi ``` <br>
+``` pip install fastapi ```<br>
 ``` pip install uvicorn[standard] ```
