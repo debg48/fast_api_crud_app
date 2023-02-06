@@ -20,7 +20,6 @@
 
 ``` git clone https://github.com/debg48/fast_api_crud_app.git```
 
-
 Configuring MYSQL :
 
 * Create and use the Database
@@ -63,7 +62,45 @@ CREATE TABLE products (
 
 THe endpoints for testing along with http methods are described below (along with body parameters)
 
-#### * POST (Create Product) :
+Note : The CRUD apis will require a login of a registered account in the account tables from the database . (Authentication used -> JWT (token is sent using cookies in this app))
+
+* #### POST (Register Account) :
+
+Endpoint
+
+```127.0.0.1:8000/register/```
+
+Body raw (json) :
+
+```
+{
+    "email":"debgandhar4000@gmail.com",
+    "password" : "1234"
+}
+```
+
+* #### POST (Login Account) :
+
+Endpoint
+
+```127.0.0.1:8000/login/```
+
+Body raw (json) :
+
+```
+{
+    "email":"debgandhar4000@gmail.com",
+    "password" : "1234"
+}
+```
+* #### POST (Logout Account) :
+
+Endpoint
+
+```127.0.0.1:8000/logout/```
+
+
+* #### POST (Create Product) :
 
 Endpoint
 
@@ -80,7 +117,7 @@ Endpoint
 }
  ```
 
-* ####  GET (Get All Products):
+* #### GET (Get All Products):
 
 Endpoint
 
@@ -95,7 +132,7 @@ Endpoint
  
  <id> corresponds to the id of the product which we want to find 
  
- #### PUT (Update a Particular Product):
+ * #### PUT (Update a Particular Product):
  
  Endpoint
 
@@ -112,3 +149,14 @@ Endpoint
     "price" : 199.00
     }
   ```
+
+ * #### DELETE (Delete a Product):
+  
+  Endpoint
+  
+  ```127.0.0.1:8000/products/<id>```
+  
+  <id> corresponds to the id of the product which we want to find
+   
+   
+  
