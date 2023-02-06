@@ -28,7 +28,7 @@ USE test_db;
 *
 
 ``` 
-CREATE TABLE items (
+CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
