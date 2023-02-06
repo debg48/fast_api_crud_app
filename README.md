@@ -18,7 +18,7 @@
 
 ### Installing the code locally :
 
-``` git clone ```
+``` git clone https://github.com/debg48/fast_api_crud_app.git```
 
 
 Configuring MYSQL :
@@ -66,9 +66,10 @@ THe endpoints for testing along with http methods are described below (along wit
 #### POST (Create Product) :
 
 Endpoint
+
  ```127.0.0.1:8000/products/```
  
- Body raw(json) :
+ Body raw (json) :
  
  ```
  {
@@ -78,3 +79,36 @@ Endpoint
     
 }
  ```
+
+#### GET (Get All Products):
+
+Endpoint
+
+ ```127.0.0.1:8000/products/```
+ 
+ 
+#### GET (Get a Particular Products):
+
+Endpoint
+
+ ```127.0.0.1:8000/products/<id>```
+ 
+ <id> corresponds to the id of the product which we want to find 
+ 
+ #### PUT (Update a Particular Product):
+ 
+ Endpoint
+
+  ```127.0.0.1:8000/products/<id>```
+ 
+ <id> corresponds to the id of the product which we want to find 
+  
+  Body raw (json) :
+  
+  ```
+  {
+    "name" : "Dairy",
+    "description" : "Note taking diary , premium quality",
+    "price" : 199.00
+    }
+  ```
