@@ -11,7 +11,9 @@ Requirements :
  * pydantic
  
 ``` pip install fastapi ```<br>
-``` pip install uvicorn[standard] ```
+``` pip install uvicorn[standard] ```<br>
+``` pip install mysql-connector-python ```<br>
+
 
 
 Configuring MYSQL :
