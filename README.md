@@ -63,4 +63,16 @@ CREATE TABLE products (
 
 * Endpoints : 
 
-#### POST Create Product
+#### POST (Create Product) :
+ ```127.0.0.1:8000/products/```
+ 
+ Body raw(json) :
+ 
+ ```
+ {
+    "name": " ",
+    "description" : "Nike Shoes",
+    "price" : 5999.99
+    
+}
+ ```
