@@ -4,16 +4,21 @@
 ## Installation Guide:-
 
 
-Requirements :
+### Requirements :
+ * git
  * Fast Api
- * Uvicorn
+ * uvicorn
  * SQL Connector
- * pydantic
+ * pyjwt
  
 ``` pip install fastapi ```<br>
 ``` pip install uvicorn[standard] ```<br>
 ``` pip install mysql-connector-python ```<br>
+``` pip install pyjwt ```<br>
 
+### Installing the code locally :
+
+``` git clone ```
 
 
 Configuring MYSQL :
@@ -49,6 +54,13 @@ CREATE TABLE products (
 );
 ```
 
-Running App : 
+### Running App : 
 
 ``` uvicorn main:app --reload ```
+
+
+### Testing Apis :
+
+* Endpoints : 
+
+#### POST Create Product
