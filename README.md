@@ -80,14 +80,14 @@ Endpoint
 }
  ```
 
-#### * GET (Get All Products):
+* ####  GET (Get All Products):
 
 Endpoint
 
  ```127.0.0.1:8000/products/```
  
  
-#### * GET (Get a Particular Products):
+* #### GET (Get a Particular Products):
 
 Endpoint
 
