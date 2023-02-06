@@ -62,7 +62,7 @@ CREATE TABLE products (
 
 THe endpoints for testing along with http methods are described below (along with body parameters)
 
-Note : The CRUD apis will require a login of a registered account in the account tables from the database . (Authentication used -> JWT (token is sent using cookies in this app))
+Note : The CRUD apis will require a login of a registered account in the account tables from the database . (Authentication used -> JWT (token is sent using cookies in this app)) Make sure jwt token appears in cookies while login before hitting crud api endpoints .
 
 * #### POST (Register Account) :
 
