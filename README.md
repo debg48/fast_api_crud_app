@@ -12,13 +12,15 @@ Requirements :
 
 Configuring MYSQL :
 
-```CREATE TABLE items (
+``` 
+CREATE TABLE items (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
     price FLOAT NOT NULL,
     tax FLOAT NOT NULL
-);```
+);
+```
 
 Running App : 
 
