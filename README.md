@@ -1,1 +1,8 @@
-# fast_api_crud_app
+# CRUD API using FastAPI
+
+Requirements :
+ * Fast Api
+ * Uvicorn
+ * 
+ *
+ 
