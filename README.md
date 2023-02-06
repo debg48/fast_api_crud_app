@@ -61,9 +61,11 @@ CREATE TABLE products (
 
 ### Testing Apis :
 
-* Endpoints : 
+THe endpoints for testing along with http methods are described below (along with body parameters)
 
 #### POST (Create Product) :
+
+Endpoint
  ```127.0.0.1:8000/products/```
  
  Body raw(json) :
