@@ -110,7 +110,7 @@ Endpoint
  
  ```
  {
-    "name": " ",
+    "name": "shoes",
     "description" : "Nike Shoes",
     "price" : 5999.99
     
